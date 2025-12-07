@@ -241,7 +241,7 @@ function download_file(string $url, string $destination): void
 
     curl_setopt_array($ch, [
         CURLOPT_FILE            => $fp,
-        CURLOPT_FOLLOWLOCATION  => false,
+        CURLOPT_FOLLOWLOCATION  => true,
         CURLOPT_TIMEOUT         => 120,
         CURLOPT_CONNECTTIMEOUT  => 15,
         CURLOPT_USERAGENT       => 'L2DDownloader/1.0',
